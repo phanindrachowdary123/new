@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+
+}
+.header{
+  width: 100%;
+  position:fixed;
+}
+nav{
+  display: flex;
+  padding: 10px 6px;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 4px 15px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: green;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+/* .ex{
+  background-color: black;
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  transition: .1s;
+} */
+.ex{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.welcome{
+  height:577px;
+  width: 100%;
+  position: relative;
+  border-radius: 20px solid red;
+}
+.wel p{
+  top: 40%;
+  color: white;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  font-size: 50px;
+  width: 100%;
+}
+video{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.wel {
+  margin: 0;
+  width: 80%;
+  height: 50%;
+  top:50%;
+  left:50%;
+  position: relative;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  border-radius: 10px;
+
+}
+.wel:hover {
+    box-shadow: 0px 0px 10px 10px green;
+    display: block;
+}
+.sem{
+  text-align:center;
+  padding: 50px;
+  padding-left: 25%;
+}
+.semester{
+  padding: 30px;
+  padding-left:50px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  width: 70%;
+  height: 280px;
+}
+.semester:hover{
+    transform: scale(1.15);
+    box-shadow: 0px 0px 10px 10px blue;
+}
+#left{
+  width: 50%;
+  float: left;
+  height: 300px;
+}
+#right{
+  width: 50%;
+  float: right;
+  height: 300px;
+}
+#sub{
+    font-size: 18px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    background-color:white;
+    color: white;
+    padding: 6px;
+    cursor: progress;
+    border-radius: 20px;
+    /* font-size: 20px;
+    margin: auto;
+    width: 40%;
+    background-color: lightgray;
+    padding: 6px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: transform.2s;
+    cursor:progress; */
+}
+#sub a{
+  color: black;
+  text-decoration: none;
+}
+#sub:hover{
+    transform: scale(1.15);
+    box-shadow: 0px 0px 10px 10px green;
+}
+
+  .s{
+    position:relative;
+  background-color: #7868e6;
+  }
+  .e{
+    z-index: 4;
+  }
+  .S1,.S5{
+    z-index: 3;
+  }
+  .S2,.S6{
+    z-index: 2;
+  }
+  .S3,.S7{
+    z-index: 1;
+  }
+  .S4,.S8{
+    z-index: 0;
+  }
+    .sidebar {
+      z-index: 5;
+      position: fixed;
+      left: -250px;
+      width: 250px;
+      height:70vh;
+      background: #063146;
+      background-color: rgba(255,255,255,0.5);
+      transition: all .5s ease;
+    }
+    .sidebar header {
+      font-size: 22px;
+      color: white;
+      line-height: 70px;
+      text-align: center;
+      background: #063146;
+      background-color: rgba(255,255,255,0.5)
+      user-select: none;
+    }
+    .sidebar ul a{
+      text-decoration: none;
+      text-align: left;
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 65px;
+      font-size: 20px;
+      color: white;
+      padding-left: 40px;
+      box-sizing: border-box;
+      border-bottom: 1px solid black;
+      border-top: 1px solid rgba(255,255,255,.1);
+      transition: .4s;
+      background: #063146
+    }
+    .sidebar ul li:hover a{
+      padding-left: 50px;
+    }
+    .sidebar ul a i{
+      margin-right: 16px;
+    }
+    #check{
+      display: none;
+    }
+    label #btn,label #cancel{
+      z-index: 1;
+      position: absolute;
+      background: #042331;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    label #btn{
+      position: fixed;
+      left: 18px;
+      font-size: 20px;
+      top:10px;
+      color: white;
+      padding: 6px 12px;
+      transition: all .5s;
+    }
+    label #cancel{
+      position: fixed;
+      z-index: 1111;
+      left: -195px;
+      top: 10px;
+      font-size: 30px;
+      color: #0a5275;
+      padding: 4px 9px;
+      transition: all .5s ease;
+    }
+    #check:checked ~ .sidebar{
+      left: 0;
+    }
+    #check:checked ~ label #btn{
+      left: 250px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    #check:checked ~ label #cancel{
+      position: fixed;
+      left: 195px;
+  }
